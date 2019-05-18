@@ -7,23 +7,25 @@ module.exports = {
   devServer: {
     publicPath: '/build/',
     proxy: {
-      '/api': 'http://localhost:3000',
+      '/api': 'http://localhost:3000'
     },
-    historyApiFallback: true,
+    historyApiFallback: true
     // contentBase: './'
   },
   devtool: 'source-map',
   module: {
-    rules: [{
-      test: /\.js$/,
-      exclude: /(node_modules)/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env', '@babel/preset-react']
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
         }
       }
-    }]
+    ]
   },
   output: {
     path: path.resolve(__dirname, 'build'),
