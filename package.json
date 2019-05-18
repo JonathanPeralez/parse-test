@@ -1,0 +1,32 @@
+{
+  "name": "parse-test",
+  "version": "0.1.0",
+  "description": "Test parse of js files",
+  "main": "index.js",
+  "scripts": {
+    "dev-client": "webpack-dev-server",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanPeralez/parse-test.git"
+  },
+  "author": "Jonathan Peralez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonathanPeralez/parse-test/issues"
+  },
+  "homepage": "https://github.com/JonathanPeralez/parse-test#readme",
+  "dependencies": {
+    "webpack": "^4.30.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
