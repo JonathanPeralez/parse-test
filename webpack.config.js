@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   // change entry file to the path/file of your React app
-  entry: './client/index.js',
+  entry: './src/index.js',
   mode: 'development',
   devServer: {
     publicPath: '/build/',
