@@ -28,7 +28,7 @@ class App extends Component {
   highlightSelectedPost(e) {
     const selectedPost = e.currentTarget.id;
     this.setState({
-      selectedPost: selectedPost
+      selectedPost
     });
   }
 
@@ -78,13 +78,15 @@ const PostsContainer = props => {
 
 const TestComponent = () => {
   return (
-    <div><h1>Test component rendered</h1></div>
+    <div>
+      <h1>Test component rendered</h1>
+    </div>
   );
-}
+};
 
 const Post = props => {
   const handleClick = e => {
-    trace('post click', Date.now() , () => {
+    trace('post click', Date.now(), () => {
       props.highlightSelectedPost(e);
       console.log('trace ran');
     });
@@ -92,9 +94,9 @@ const Post = props => {
   };
   let style;
   if (props.id === props.selectedPost) {
-    style = { backgroundColor: "lightBlue" };
+    style = { backgroundColor: 'lightBlue' };
   } else {
-    style = { backgroundColor: "yellow" };
+    style = { backgroundColor: 'yellow' };
   }
   return (
     // eslint-disable-next-line jsx-a11y/click-events-have-key-events

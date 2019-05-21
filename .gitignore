@@ -149,3 +149,5 @@ Temporary Items
 !.vscode/extensions.json
 /config/
 build/
+ast/
+parsed_outputs/
